@@ -57,7 +57,7 @@ const toUpper = () => {
 }
 
 
-//Number the math object
+//NUNMBER THE MATH OBJECT
 
 
 const num1 = 100;
@@ -66,6 +66,29 @@ let val;
 
 // Simple math with numbers
 val = num1 + num2;
+val = num1 * num2;
+val = num1 - num2;
+val = num1 / num2;
+val = num1 % num2;
+
+//Math  Object
+val = Math.PI;
+val = Math.E;
+val = Math.round(2.4);
+val = Math.cell(2.4);
+val = Math.floor(2.8);
+val = Math.sqrt(64);
+val = Math.abs(-3);
+val = Math.pow(8, 2);
+val = Math.min(-2,17,38,4,20,10,31);
+val = Math.max(-2,17,38,4,20,10,31);
+val = Math.random();// decimal
+val = Math.random(); * 20 + 1;//Whole number 1-20 with decima
+val = Math.floor(Math.random(); * 20 + 1);//whole number 1-20
 
 console.log(val);
+
+//FUNCTIONS...WITH PARAMETERS AND ARGUMENTS
+
+
 */
