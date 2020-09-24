@@ -87,8 +87,4 @@ val = Math.random(); * 20 + 1;//Whole number 1-20 with decima
 val = Math.floor(Math.random(); * 20 + 1);//whole number 1-20
 
 console.log(val);
-
-//FUNCTIONS...WITH PARAMETERS AND ARGUMENTS
-
-
 */
