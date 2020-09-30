@@ -1,57 +1,21 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Flex Panels 💪</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.scss">
+    <title>Document</title>
 </head>
 <body>
-
-  <div class="panels">
-    <div class="panel panel1">
-      <p>Hey</p>
-      <p>I'm</p>
-      <p>Riya</p>
-    </div>
-    <div class="panel panel2">
-      <p>I</p>
-      <p>like</p>
-      <p>Chocolate</p>
-    </div>
-    <div class="panel panel3">
-      <p>Want</p>
-      <p>A</p>
-      <p>Peice?</p>
-    </div>
-    <div class="panel panel4">
-      <p>Ik</p>
-      <p>Very</p>
-      <p>Cool</p>
-    </div>
-    <div class="panel panel5">
-      <p>Yes This Has</p>
-      <p>Stoopid</p>
-      <p>Sentences</p>
-    </div>
-  </div>
-
-  <script>
-    const panels = document.querySelectorAll('.panel');
-
-    function toggleOpen() {
-      console.log('Hello');
-      this.classList.toggle('open');
-    }
-
-    function toggleActive(e) {
-      console.log(e.propertyName);
-      if (e.propertyName.includes('flex')) {
-        this.classList.toggle('open-active');
-      }
-    }
-
-    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
-  </script>
-
+    <section class="container" >
+        <h1>Tip Calculator</h1>
+        <form id="tip-form">
+            <textarea class="form-text" placeholder="Enter Bill Amount" id="bill-amount" cols="30" rows="10"></textarea>
+            <textarea class="form-text" placeholder="Enter Tip Percentage" id="tip-amount" cols="30" rows="10"></textarea>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+        <h2 id="final-tip"></h2>
+    </section>
+    
+    <script src="index.js"></script>
 </body>
 </html>
