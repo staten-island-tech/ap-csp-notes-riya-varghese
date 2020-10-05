@@ -8,7 +8,7 @@ tipForm.addEventListener("submit", function (e) {
   //do some math for the tip
   //do some math for tip plus bill
   const tipAmount = document.querySelector("#final-tip");
-  tipAmount.innerHTML = ${tipPercentage} ;
+  tipAmount.innerHTML = ${tipPercentage};
   //reset the calculator
 });
 
