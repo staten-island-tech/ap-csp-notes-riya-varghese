@@ -1,90 +1,44 @@
-/*
-const myAge = 17;
-const yourAge = 38;
-console.log(myAge + yourAge);
+/*If Else Statements
 
-console.log("Hello my name is " + "Riya");// make sure to add a space after first one or the it will be isriya
-console.log('Hello it\'s me Riya')//if you use single quotes but one of ur words has apostrophe, you have to put a backslash before the apostrophe or replace with double quotes
+const age = 16;
+// u can change > to ===, we use that because if we use == it  will also acccept strings as tru which is a different value type than what we are looking for 
+// >= greater than or equal to can also work
+if(age >= 18){
+    console.log("you are good to go");
+}//this runs only if const is bigger than 18
 
-const name = "Riya";
-console.log(`Hey again it's me and my name is ${name}`)// that backtik thingy is above tab, $() is easier way to write the + ()
-
-const name = "Riya";
-const age = 17;
-console.log("Hi it's me " + name + " and I'm " + age + " years old. ");
-console.log(`Hello it's me ${name} and my age is ${age}`);// better way to write it
-
-const combined = name + age;
-console.log(combined);// since they're not both numbers and not both strings it becomes Riya17
-// to find data type u just do console.log(tyoeof combined);
-
-
-// FUNCTIONs
-
-
-const name = "Riya V";
-function logger() {
-    console.log(`Party Time');//shift+alt+down= copy paste down
-    console.log(`Party Time');
-    console.log(`Party Time');
-    console.log(`Party Time');
-}//only saves it to memory
-logger();//says it
-//whatever variables you add in the function aren't available outside the function
-// although whatever you put outside the function is available in the function
-
-const name = "Riya V";
-function adder(num1, num2) {
-    console.log(num1 + num2);
+else if(age < 15){
+    console.log("Whoa there lil fella, where do u think you're going")
+}// goes through both of these fuctions before it goes to else
+else{
+    console.log("You are not old enough")
+}//only runs if anything is less than 18
+const dice1 = 6;
+const dice2 = 3;
+// if u use || instead of && it basically functions as an or 
+if (dice1 === 6 && dice2=== 6 ){
+    console.log("you roled a double")
 }
-adder(5, 10);
-//way#1
-const name = "Riya V";
-const prisoner = `School`;
-function toUpper(text) {//made a parameter
-   const UpperCased = text.toUpperCase();
-   console.log(upperCased);
+else {
+    console.log("you didn't role a double")
 }
-toUpper(name);
-toUpper(prisoner)
-//way#2
-const toUpper = function(){
-    heyooo
-}
-//way#3
-const toUpper = () => {
-    heyooo
-}
+ 
 
+//objects
+const user = {
+    name: `Riya`,
+    age: 17,
+    married: false,
+    purchases: ["phone", "car", "laptop"]
 
-//NUNMBER THE MATH OBJECT
+    sayName: fuction() {
+        console.log(this.name);
+    }
+};
+user.sayName();
+//console.log(user.purchases);
+//this
 
+//console.log(this);//shows everythinggg that we used thus for
 
-const num1 = 100;
-const num2 = 50;
-let val;
-
-// Simple math with numbers
-val = num1 + num2;
-val = num1 * num2;
-val = num1 - num2;
-val = num1 / num2;
-val = num1 % num2;
-
-//Math  Object
-val = Math.PI;
-val = Math.E;
-val = Math.round(2.4);
-val = Math.cell(2.4);
-val = Math.floor(2.8);
-val = Math.sqrt(64);
-val = Math.abs(-3);
-val = Math.pow(8, 2);
-val = Math.min(-2,17,38,4,20,10,31);
-val = Math.max(-2,17,38,4,20,10,31);
-val = Math.random();// decimal
-val = Math.random(); * 20 + 1;//Whole number 1-20 with decima
-val = Math.floor(Math.random(); * 20 + 1);//whole number 1-20
-
-console.log(val);
 */
